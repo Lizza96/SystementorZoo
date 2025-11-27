@@ -1,0 +1,184 @@
+/* RESET */
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+/* END RESET */
+
+/* VARIABLES */
+:root {
+    --color-lime-50: oklch(98.6% 0.031 120.757);
+    --color-lime-100: oklch(96.7% 0.067 122.328);
+    --color-lime-200: oklch(93.8% 0.127 124.321);
+    --color-lime-300: oklch(89.7% 0.196 126.665);
+    --color-lime-400: oklch(84.1% 0.238 128.85);
+    --color-lime-500: oklch(76.8% 0.233 130.85);
+    --color-lime-600: oklch(64.8% 0.2 131.684);
+    --color-lime-700: oklch(53.2% 0.157 131.589);
+    --color-lime-800: oklch(45.3% 0.124 130.933);
+    --color-lime-900: oklch(40.5% 0.101 131.063);
+    --color-lime-950: oklch(27.4% 0.072 132.109);
+
+    --color-green-50: oklch(98.2% 0.018 155.826);
+    --color-green-100: oklch(96.2% 0.044 156.743);
+    --color-green-200: oklch(92.5% 0.084 155.995);
+    --color-green-300: oklch(87.1% 0.15 154.449);
+    --color-green-400: oklch(79.2% 0.209 151.711);
+    --color-green-500: oklch(72.3% 0.219 149.579);
+    --color-green-600: oklch(62.7% 0.194 149.214);
+    --color-green-700: oklch(52.7% 0.154 150.069);
+    --color-green-800: oklch(44.8% 0.119 151.328);
+    --color-green-900: oklch(39.3% 0.095 152.535);
+    --color-green-950: oklch(26.6% 0.065 152.934);
+
+    --primary-color: var(--color-green-900);
+    --secondary-color: #f97a00;
+    --accent-color-1: #fed16a;
+    --accent-color-2: #fff4a4;
+
+    --header-logo-font-family: "Finger Paint", sans-serif;
+    --heading-font-family: "Lexend", sans-serif;
+}
+/* END VARIABLES */
+
+/* TITLES */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font-family);
+}
+
+.sub-title {
+    font-size: 1em;
+}
+/* END TITLES */
+
+/* HEADER*/
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 2em;
+    z-index: 3;
+    box-shadow: 1px 8px 11px 5px rgba(0, 0, 0, 0.19);
+}
+
+.header-title a {
+    color: var(--secondary-color);
+    font-family: var(--header-logo-font-family);
+    font-weight: 700;
+    font-size: 1.2em;
+    text-shadow: 2px 2px #c05f049e;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
+nav {
+    align-content: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2em;
+    font-family: var(--heading-font-family);
+}
+
+.nav-menu li {
+    list-style: none;
+}
+/* END HEADER */
+
+/* BUTTONS */
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    font-family: var(--heading-font-family);
+    margin-block: 2em;
+}
+
+.btn:hover {
+    box-shadow: 1px 4px 8px 4px rgba(0, 0, 0, 0.19);
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    border-width: 2px;
+}
+
+/* END BUTTONS */
+
+/* HERO */
+.hero-section {
+    background-color: var(--accent-color-1);
+    background: url("/images/tiger.jpg") no-repeat top right/ cover;
+}
+
+.hero-content {
+    padding: 6rem 3rem;
+    background: linear-gradient(
+        90deg,
+        var(--accent-color-1) 10%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+/* END HERO */
+
+.section-accent-2-bg {
+    background-color: var(--accent-color-2);
+}
+
+.section-accent-3-bg {
+    background-color: var(--accent-color-3);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-color);
+}
+/* END FOOTER */
