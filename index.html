@@ -24,8 +24,8 @@
     <body>
         <header>
             <!-- LOGGA -->
-            <h1 class="header-title">
-                <a href="index.html">Systementor Zoo</a>
+            <h1>
+                <a class="header-title" href="index.html">Systementor Zoo</a>
             </h1>
             <nav>
                 <ul class="nav-menu">
@@ -37,61 +37,71 @@
             </nav>
         </header>
         <main>
-            <!-- hero -->
-            <section class="hero-section">
+            <!-- End Hero -->
+            <section class="hero-section z-index-top">
                 <div class="hero-content">
                     <h1>Välkommen hit!</h1>
                     <h2 class="sub-title">Öppet alla dagar 8 - 20</h2>
                     <button class="btn btn-primary">Köp biljetter här</button>
                 </div>
             </section>
+            <!-- End Hero -->
 
-            <section id="activities" class="section-accent-2-bg">
+            <!-- Our Activities -->
+            <section id="activities" class="activities-section section-accent-2-bg">
                 <h1>Att Göra Hos Oss</h1>
 
                 <h2>Äta gott!</h2>
-                <p>
-                    Ät något gott på en av alla våra otroliga restauranger.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Corporis quam minus, rem, ex nobis ab quae adipisci a quo
-                    suscipit reiciendis omnis nihil porro velit! Eum quaerat non
-                    delectus dignissimos.
-                </p>
-                <i class="fa-solid fa-burger fa-5x"></i>
+                <div class="image-text-container">
+                    <p>
+                        Ät något gott på en av alla våra otroliga restauranger.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Corporis quam minus, rem, ex nobis ab quae adipisci a quo
+                        suscipit reiciendis omnis nihil porro velit! Eum quaerat non
+                        delectus dignissimos.
+                    </p>
+                    <img src="images/luisa-brimble-aFzg83dvnAI-unsplash.jpg" alt="En familj äter runt ett bord" />
+                </div>
 
                 <h2>Surfa</h2>
-                <p>
-                    Surfa lätt och gratis med vårt WiFi som täcker hela parken!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Voluptatibus ea modi reprehenderit voluptatem, ut voluptate
-                    ex, quis et laborum aspernatur velit cumque quos neque
-                    commodi exercitationem atque. Amet, unde facilis.
-                </p>
-                <i class="fa-solid fa-wifi fa-5x"></i>
-                <!-- <img src="images/wifi.svg" alt="WiFi ikon" width="80" /> -->
+                <div class="image-text-container">
+                    <img src="images/bernard-hermant-X0EtNWqMnq8-unsplash.jpg" alt="En skylt som informerar om gratis WiFi" />
+                    <p>
+                        Surfa lätt och gratis med vårt WiFi som täcker hela parken!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Voluptatibus ea modi reprehenderit voluptatem, ut voluptate
+                        ex, quis et laborum aspernatur velit cumque quos neque
+                        commodi exercitationem atque. Amet, unde facilis.
+                    </p>
+                </div>
 
-                <h2>Lär er massor om djuren</h2>
-                <p>
-                    Lär er om alla våra olika djurarter som lever på djurparken.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos commodi obcaecati quod quidem quaerat tenetur dolores
-                    cupiditate aliquid saepe amet velit porro voluptatibus eum,
-                    quisquam sapiente? Aperiam nisi aliquid perspiciatis.
-                </p>
-                <div class="animal-wrapper">
-                    <img src="images/dogLogo.png" alt="Hunden" width="100" />
-
-                    <img src="images/cat.png" alt="Katt" width="100" />
-                    <img src="images/chicken.png" alt="Kyckling" width="100" />
-                    <img
-                        src="images/parrot.png"
-                        alt="Papegojan Pecky"
-                        width="100"
-                    />
+                <h2>Lär er om djuren</h2>
+                <div class="image-text-container">
+                    <p>
+                        Lär er om alla våra olika djurarter som lever på djurparken.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quos commodi obcaecati quod quidem quaerat tenetur dolores
+                        cupiditate aliquid saepe amet velit porro voluptatibus eum,
+                        quisquam sapiente? Aperiam nisi aliquid perspiciatis.
+                    </p>
+                    <img src="images/zooKarta.png" alt="Karta över djurparken" />
                 </div>
             </section>
+            <!-- End Our Activities -->
 
-            <section id="our-animals" class="section-accent-3-bg">
+            <div class="animal-wrapper section-primary-bg z-index-top">
+                <img src="images/dogLogo.png" alt="Hunden" width="100" />
+
+                <img src="images/cat.png" alt="Katt" width="100" />
+                <img src="images/chicken.png" alt="Kyckling" width="100" />
+                <img
+                    src="images/parrot.png"
+                    alt="Papegojan Pecky"
+                    width="100"
+                />
+            </div>
+
+            <section id="our-animals" class="animals-section section-accent-3-bg">
                 <h1>Våra fantastiska djur</h1>
                 <div></div>
 
@@ -176,7 +186,7 @@
                 </table>
             </section>
 
-            <section id="our-location">
+            <section id="our-location" class="section-accent-2-bg">
                 <div>
                     <h2>Hitta till oss</h2>
                     <p>Adress: Gatunamnet 12A</p>
@@ -198,7 +208,7 @@
                 </div>
             </section>
 
-            <section id="news-letter">
+            <section id="news-letter" class="section-accent-3-bg">
                 <h2>Registrera till vårt nyhetsbrev</h2>
                 <p>Få de senaste uppdateringarna rätt in i inkorgen!</p>
                 <p><span class="required">*</span> Obligatoriska fält</p>
