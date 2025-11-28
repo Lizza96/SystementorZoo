@@ -56,6 +56,35 @@ ul {
     --color-green-900: oklch(39.3% 0.095 152.535);
     --color-green-950: oklch(26.6% 0.065 152.934);
 
+    --color-emerald-50: oklch(97.9% 0.021 166.113);
+    --color-emerald-100: oklch(95% 0.052 163.051);
+    --color-emerald-200: oklch(90.5% 0.093 164.15);
+    --color-emerald-300: oklch(84.5% 0.143 164.978);
+    --color-emerald-400: oklch(76.5% 0.177 163.223);
+    --color-emerald-500: oklch(69.6% 0.17 162.48);
+    --color-emerald-600: oklch(59.6% 0.145 163.225);
+    --color-emerald-700: oklch(50.8% 0.118 165.612);
+    --color-emerald-800: oklch(43.2% 0.095 166.913);
+    --color-emerald-900: oklch(37.8% 0.077 168.94);
+    --color-emerald-950: oklch(26.2% 0.051 172.552);
+
+    --pale-sky: #bfd7eaff;
+    --cool-steel: #91aec1ff;
+    --air-force-blue: #508ca4ff;
+    --sea-green: #0a8754ff;
+    --dark-spruce: #004f2dff;
+
+    --pine-teal: #004733ff;
+    --dark-emerald: #2b6a4dff;
+    --sea-green: #568d66ff;
+    --ash-grey: #a5c1aeff;
+    --platinum: #f3f4f6ff;
+    --alabaster-grey: #dcdfe5ff;
+    --light-coral: #df8080ff;
+    --brick-ember: #cb0b0aff;
+    --mahogany-red: #ad080fff;
+    --deep-crimson: #8e0413ff;
+
     /* --primary-color: var(--color-green-900); */
     --primary-color: #386641;
     --secondary-color: #f97a00;
@@ -92,7 +121,7 @@ h6 {
 /* UTILITIES */
 .z-index-top {
     z-index: 2;
-    position: relative;;
+    position: relative;
 }
 /* END UTILITIES */
 
@@ -100,12 +129,16 @@ h6 {
 header {
     background-color: var(--primary-color);
     /* background: linear-gradient(15deg,rgba(56, 102, 65, 1) 0%, rgba(56, 102, 65, 1) 58%, rgba(254, 209, 106, 1) 100%); */
-    background: linear-gradient(15deg,rgba(56, 102, 65, 1) 0%, rgba(71, 125, 81, 1) 100%);
+    background: linear-gradient(
+        15deg,
+        rgba(56, 102, 65, 1) 0%,
+        rgba(71, 125, 81, 1) 100%
+    );
     /* background: linear-gradient(15deg,rgba(56, 102, 65, 1) 0%, rgba(254, 209, 106, 1) 100%); */
     display: flex;
     justify-content: space-between;
     padding: 1.5em var(--inline-content-padding);
-    box-shadow: -4px -46px 57px -43px rgba(0,0,0,0.25) inset;
+    box-shadow: -4px -46px 57px -43px rgba(0, 0, 0, 0.25) inset;
 }
 
 .header-title {
@@ -169,14 +202,13 @@ nav {
 
 /* END BUTTONS */
 
-
 /* HERO */
 .hero-section {
     background-color: var(--accent-color-1);
     background: url("/images/tiger.jpg") no-repeat top right/ cover;
     /* border-bottom: var(--secondary-color) 3px solid;
     border-top: var(--secondary-color) 3px solid; */
-    box-shadow:var(--floating-shadow);
+    box-shadow: var(--floating-shadow);
 }
 
 .hero-content {
@@ -186,22 +218,26 @@ nav {
         var(--accent-color-1) 10%,
         rgba(255, 255, 255, 0) 100%
     );
-    
 }
 
 /* END HERO */
 
 .section-primary-bg {
     background-color: var(--primary-color);
-    background: linear-gradient(15deg,rgba(56, 102, 65, 1) 0%, rgba(71, 125, 81, 1) 100%);
+    background: linear-gradient(
+        15deg,
+        rgba(56, 102, 65, 1) 0%,
+        rgba(71, 125, 81, 1) 100%
+    );
 }
 
 .section-accent-3-bg {
     background-color: var(--accent-color-3);
 }
- .animals-section, .activities-section {
+.animals-section,
+.activities-section {
     padding: 2rem var(--inline-content-padding);
- }
+}
 
 /* ACTIVITIES SECTION */
 .image-text-container {
