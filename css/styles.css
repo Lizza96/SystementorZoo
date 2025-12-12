@@ -217,14 +217,14 @@ nav {
 .hero-section {
     /* 2 fallbacks */
     background-color: var(--accent-color-1);
-    background-image: url("/images/tiger.jpg");
+    background-image: url("../images/tiger.jpg");
 
     background: linear-gradient(
             90deg,
             var(--accent-color-1) 10%,
             rgba(0, 0, 0, 0) 100%
         ),
-        url("/images/tiger.jpg") no-repeat top right / cover;
+        url("../images/tiger.jpg") no-repeat top right / cover;
 
     box-shadow: var(--floating-shadow);
     padding: 6rem var(--inline-content-padding);
