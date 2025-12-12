@@ -35,81 +35,15 @@ ul {
 
 /* VARIABLES */
 :root {
-    --color-lime-50: oklch(98.6% 0.031 120.757);
-    --color-lime-100: oklch(96.7% 0.067 122.328);
-    --color-lime-200: oklch(93.8% 0.127 124.321);
-    --color-lime-300: oklch(89.7% 0.196 126.665);
-    --color-lime-400: oklch(84.1% 0.238 128.85);
-    --color-lime-500: oklch(76.8% 0.233 130.85);
-    --color-lime-600: oklch(64.8% 0.2 131.684);
-    --color-lime-700: oklch(53.2% 0.157 131.589);
-    --color-lime-800: oklch(45.3% 0.124 130.933);
-    --color-lime-900: oklch(40.5% 0.101 131.063);
-    --color-lime-950: oklch(27.4% 0.072 132.109);
-
-    --color-green-50: oklch(98.2% 0.018 155.826);
-    --color-green-100: oklch(96.2% 0.044 156.743);
-    --color-green-200: oklch(92.5% 0.084 155.995);
-    --color-green-300: oklch(87.1% 0.15 154.449);
-    --color-green-400: oklch(79.2% 0.209 151.711);
-    --color-green-500: oklch(72.3% 0.219 149.579);
-    --color-green-600: oklch(62.7% 0.194 149.214);
-    --color-green-700: oklch(52.7% 0.154 150.069);
-    --color-green-800: oklch(44.8% 0.119 151.328);
-    --color-green-900: oklch(39.3% 0.095 152.535);
-    --color-green-950: oklch(26.6% 0.065 152.934);
-
-    --color-emerald-50: oklch(97.9% 0.021 166.113);
-    --color-emerald-100: oklch(95% 0.052 163.051);
-    --color-emerald-200: oklch(90.5% 0.093 164.15);
-    --color-emerald-300: oklch(84.5% 0.143 164.978);
-    --color-emerald-400: oklch(76.5% 0.177 163.223);
-    --color-emerald-500: oklch(69.6% 0.17 162.48);
-    --color-emerald-600: oklch(59.6% 0.145 163.225);
-    --color-emerald-700: oklch(50.8% 0.118 165.612);
-    --color-emerald-800: oklch(43.2% 0.095 166.913);
-    --color-emerald-900: oklch(37.8% 0.077 168.94);
-    --color-emerald-950: oklch(26.2% 0.051 172.552);
-
     --color-orange-50: oklch(98% 0.016 73.684);
     --color-orange-100: oklch(95.4% 0.038 75.164);
-    --color-orange-200: oklch(90.1% 0.076 70.697);
-    --color-orange-300: oklch(83.7% 0.128 66.29);
-    --color-orange-400: oklch(75% 0.183 55.934);
-    --color-orange-500: oklch(70.5% 0.213 47.604);
-    --color-orange-600: oklch(64.6% 0.222 41.116);
-    --color-orange-700: oklch(55.3% 0.195 38.402);
-    --color-orange-800: oklch(47% 0.157 37.304);
-    --color-orange-900: oklch(40.8% 0.123 38.172);
-    --color-orange-950: oklch(26.6% 0.079 36.259);
 
-    --pale-sky: #bfd7eaff;
-    --cool-steel: #91aec1ff;
-    --air-force-blue: #508ca4ff;
-    --sea-green: #0a8754ff;
-    --dark-spruce: #004f2dff;
-
-    --pine-teal: #004733ff;
-    --dark-emerald: #2b6a4dff;
-    --sea-green: #568d66ff;
-    --ash-grey: #a5c1aeff;
-    --platinum: #f3f4f6ff;
-    --alabaster-grey: #dcdfe5ff;
-    --light-coral: #df8080ff;
-    --brick-ember: #cb0b0aff;
-    --mahogany-red: #ad080fff;
-    --deep-crimson: #8e0413ff;
-
-    /* --primary-color: var(--color-green-900); */
     --primary-color: #386641;
     --secondary-color: #f97a00;
-    /* --accent-color-1: #fed16a; */
+
     --accent-color-1: #fed16a;
-    /* --accent-color-2: oklch(96.2% 0.059 95.617);
-    --accent-color-3: oklch(98.7% 0.022 95.277); */
     --accent-color-2: var(--color-orange-50);
     --accent-color-3: var(--color-orange-100);
-    /* --accent-color-2: #fff4a4; */
 
     --header-logo-font-family: "Finger Paint", sans-serif;
     --heading-font-family: "Lexend", sans-serif;
@@ -117,7 +51,7 @@ ul {
     --inline-content-padding: 3rem;
     --inline-paragraph-padding: 2rem;
 
-    /* --floating-shadow: 1px 8px 11px 5px rgba(0, 0, 0, 0.19); */
+    --floating-shadow: 1px 8px 11px 5px rgba(0, 0, 0, 0.19);
 
     --image-text-border-radius: 2rem;
     --btn-border-radius: 1rem;
@@ -187,6 +121,7 @@ footer a {
 
 header nav a:hover,
 footer a:hover {
+    transition: 0.4s ease;
     color: var(--secondary-color);
     text-decoration: underline;
     text-underline-offset: 4px;
@@ -238,7 +173,7 @@ nav {
 }
 
 .mobile-nav {
-    display: none
+    display: none;
 }
 /* END HEADER */
 
@@ -352,7 +287,6 @@ nav {
     justify-items: center;
     padding: 2rem var(--inline-content-padding);
     box-shadow: var(--floating-shadow);
-    z-index: 2;
 }
 /* END ACTIVITIES SECTION */
 
@@ -363,7 +297,9 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
 }
 
-table, th, td {
+table,
+th,
+td {
     text-align: center;
     border: 1px solid black;
     border-collapse: collapse;
@@ -469,4 +405,3 @@ footer {
     grid-template-columns: auto auto;
 }
 /* END FOOTER */
-
